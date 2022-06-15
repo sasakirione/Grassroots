@@ -1,0 +1,12 @@
+
+textContents:
+    -
+        value: 1.こんばんはこんばんは
+        position:
+            position_x: 2
+            position_y: 2
+    -
+        value: 1.1. こんにちはこんにちは
+        position:
+            position_x: 3
+            position_y: 3
