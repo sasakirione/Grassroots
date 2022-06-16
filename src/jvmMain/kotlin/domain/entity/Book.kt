@@ -4,5 +4,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class Book(
-    val textContents: MutableList<Sentence>
+    val textContents: MutableList<Sentence>,
+    val path: String
 )

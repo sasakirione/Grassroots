@@ -11,4 +11,9 @@ class FileReader: IFireReader {
         return Yaml.default.decodeFromString(Book.serializer(), inputText)
     }
 
+    override fun saveBook(path: String, book: Book) {
+        val file = File(path)
+        val outputText = Yaml.default.encodeToString(Book.serializer(), book)
+        file.writeText(outputText)
+    }
 }
